@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* تنسيق التبويبات */
+    ul.tabs {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        float: right;
+        margin-bottom: 10px;
+    }
+
+    ul.tabs li {
+        margin-right: 5px;
+    }
+
+    ul.tabs li a {
+        text-decoration: none;
+        padding: 5px 20px;
+        background-color: #ccc;
+        color: black;
+        border-radius: 5px;
+    }
+
+    ul.tabs li a.active {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .tab-content {
+        display: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .tab-content.active {
+        display: block;
+    }
+    .boxing
+    {
+        min-width: 100%;
+        min-height: 100%;
+    }
+</style>
+
+<body>
+
+    <!-- قائمة التبويبات -->
+    <div class="top-bar">
+		<ul class="tabs">
+			<li><a href="#tab1" class="active">الرحلات</a></li>
+			<li><a href="#tab2">المطارات</a></li>
+			<span style="display:none;color:#0000ff;margin-right:20px;" id="msg1">تم تحميل البيانات</span>
+		</ul>
+
+		<div class="bassem">Coded <span id="save-data">By</span> <a target="_blank" href="https://facebook.com/bassem.v3">Bassem</a></div>
+	</div>
+
+    <!-- محتويات التبويبات -->
+    <div id="tab1" class="tab-content active">
+        <div class="boxing">
+            <div class="pop-box">
+        
+            </div>
+            <div class="btn-box">
+                 <div class="row">
+                     <div class="col-4">
+                         <button id="clear-emails-btn">Clear</button>
+						 <button style="background-color:#006400;margin-right:5px;" id="get-data">GET</button>
+                     </div>
+                 <div style="text-align: left;" class="col-8">
+                     <span>ترتيب حسب :</span>
+                     <input type="radio" name="ty1" id="total" value="total" checked>
+                     <label for="total">الاجمالي</label>
+                     <input type="radio" name="ty1" id="date" value="date">
+                     <label for="date">التاريخ</label>
+                     <button class="btn-ty" id="sort-all">ذهاب_عودة_وجهة تالتة</button>
+                     <button class="btn-ty active" id="sort-1-2">ذهاب_عودة</button>
+                     <button class="btn-ty" id="sort-1-3">ذهاب_وجهة تالتة</button>
+                     <button class="btn-ty" id="sort-th3">وجهة تالتة</button>
+                     <button class="btn-ty" id="sort-one">ذهاب فقط</button>
+                     <button class="btn-ty" id="sort-two">عودة فقط</button>
+                 </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+
+    <div id="tab2" class="tab-content">
+        <div class="boxing">
+            <br>
+            <div style="text-align:center;" class="choose">
+                <span>بحث باستخدام : </span>
+                <label for="sr1">الدولة</label>
+                <input class="chooseClass" type="radio" name="search1" id="sr1" value="country" checked>
+                
+                |
+
+                <label for="sr2">المدينة</label>
+                <input class="chooseClass" type="radio" name="search1" id="sr2" value="city">
+                
+                |
+
+                <label for="sr3">المطار</label>
+                <input class="chooseClass" type="radio" name="search1" id="sr3" value="airport">
+                
+            </div>
+            <div  style="text-align:center;">
+                <input type="text" id="countryInput" placeholder="باللغة العربية">
+                <button id="searchButton">بحث</button>
+            </div>
+            <div id="result"></div>
+        
+        </div>
+    </div>
+
+
+   
+    <script src="jq.js"></script>
+    <script src="popup.js"></script>
+
+</body>
+</html>

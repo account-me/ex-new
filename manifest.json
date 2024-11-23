@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Flights Extractor",
+    "version": "4.0",
+    "icons": {
+        "128": "icon_128.png"
+    },
+    "description": "Coded by Bassem.",
+    "permissions": ["activeTab", "scripting", "storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://booking.flynas.com/*", "https://www.flyadeal.com/ar/select-flight/*"],
+        "js": ["jq.js","content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "persistent": true,
+      "default_icon": {
+        "16": "icon_128.png",
+        "128": "icon_128.png"
+      }
+    }
+  }
+  

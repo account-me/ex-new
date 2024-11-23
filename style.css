@@ -1,0 +1,447 @@
+body
+{
+    direction: rtl;
+    text-align: right;
+    background-image: url("bg.jpg");
+    width: 800px;
+    height: 400px;
+    min-width: 800px;
+    max-height: 400px;
+
+}
+
+.top-bar
+{
+	padding:10px;
+}
+
+
+.pop-box
+{
+    height: 400px;
+    max-height: 400px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    border-bottom: 1px solid #acacac;
+    -ms-overflow-style: none;  
+    scrollbar-width: thin;
+    color: #f0ffff;
+	padding-right:10px;
+    
+}
+
+.boxing .row
+{
+	margin:0px;
+	padding:0px;
+}
+
+
+.pop-box::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+
+
+#clear-emails-btn
+{
+    background: darkred;
+    margin-right: 10px;
+}
+
+#sort-one,
+#sort-two,
+#sort-th3,
+#sort-all,
+#sort-1-2,
+#sort-1-3
+{
+  background-color: #d1d1d1;
+  color: #2b2b2b;
+  padding: 3px 10px;
+  margin-top: 8px;
+}
+
+.pop-box button
+{
+    font-size: 15px;
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 46%;
+
+}
+
+
+
+
+.flight-box
+{
+  background-color: #f1fbff;
+    padding: 10px 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.flynas
+{
+  background-color: #8ce4de;
+  color: #303030;
+}
+
+.flyadeal
+{
+  background-color: #7f589b;
+}
+
+.flyadeal .total-num
+{
+  color: #cdde00;
+}
+
+.flynas .total-num
+{
+  color: #3c3c3c;
+}
+
+
+
+
+
+.total-rs
+{
+  font-size: 15px;
+}
+
+.total-num
+{
+  font-size: 18px;
+  font-weight: bold;
+  /* font-family: Poppins-Bold; */
+}
+.timeout1
+{
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  color: #f1fbff;
+  font-size: 20px;
+}
+
+.istimeout
+{
+  color: #ff0000 !important;
+}
+
+.col
+{
+  margin-bottom: 3px;
+}
+
+.logo1
+{
+  text-align: center;
+}
+
+
+
+.calc-box
+{
+  text-align: center;
+  background: bisque;
+  padding: 15px;
+  border: 1px solid #a7a7a7;
+  border-radius: 5px;
+  right: 10px;
+  width: 310px;
+  align-content: center;
+  position: fixed;
+  top: 20%;
+}
+
+.total-calc
+{
+  font-size: 25px;
+}
+
+.calc-box .row
+{
+  margin-bottom: 2px;
+}
+
+.calc-box input
+{
+  display: inline-block;
+  border: 1px solid #d0af7e;
+  border-radius: 5px;
+  text-align: center;
+  margin: 2px 10px;
+}
+
+
+.closebox
+{
+  text-align: right;
+}
+
+
+.closebox span
+{
+  background: #b63838;
+  width: 23px;
+  display: inline-block;
+  height: 23px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 23px;
+  color: white;
+  cursor: pointer;
+}
+
+.hidebox
+{
+  display: none !important;
+
+}
+
+.showbox
+{
+  display: block !important;
+}
+
+
+
+
+
+.total-rs {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.total-rs .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* مكان النص بالنسبة للعنصر */
+  left: 50%;
+  margin-left: -75px; /* نصف عرض النص */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.total-rs:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.rs1
+{
+    display: inline-block;
+    font-size: 13px;
+}
+
+.clock-box
+{
+    width: 23px;
+    position: absolute;
+    left: 1px;
+    top: 44px;
+}
+
+.clock-box img
+{
+    width: 100%;
+}
+
+.btn-box button
+{
+    font-size: 15px;
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-box
+{
+  padding: 0px 5px 5px 5px;
+}
+
+
+
+.seat1 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .seat1 .tooltiptext1 {
+    visibility: hidden;
+    background-color: #3a3a3a;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 1;
+    top: 125%; /* Ù…ÙƒØ§Ù† Ø§Ù„Ù†Øµ Ø¨Ø§Ù„Ù†Ø³Ø¨Ø© Ù„Ù„Ø¹Ù†ØµØ± */
+    left: 50%;
+    margin-left: -75px; /* Ù†ØµÙ Ø¹Ø±Ø¶ Ø§Ù„Ù†Øµ */
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size:15px}
+  
+  .seat1:hover .tooltiptext1 {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
+  .seat2 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .seat2 .tooltiptext2 {
+    visibility: hidden;
+    background-color: #3a3a3a;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 1;
+    top: 125%; /* Ù…ÙƒØ§Ù† Ø§Ù„Ù†Øµ Ø¨Ø§Ù„Ù†Ø³Ø¨Ø© Ù„Ù„Ø¹Ù†ØµØ± */
+    left: 50%;
+    margin-left: -75px; /* Ù†ØµÙ Ø¹Ø±Ø¶ Ø§Ù„Ù†Øµ */
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size:15px
+  }
+  
+  .seat2:hover .tooltiptext2 {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  #result
+  {
+    max-height: 250px;
+    overflow: auto;
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+  }
+
+  #countryInput
+  {
+    border: 1px solid #DDD;
+    padding: 3px 5px;
+    border-radius: 5px;
+  }
+
+  #searchButton
+  {
+    border: 1px solid #ffffff;
+    padding: 3px 15px;
+    border-radius: 5px;
+    background: #268e12;
+    color: white;
+  }
+.airport-box
+  {
+    padding: 10px;
+  }
+
+.airport-box:nth-child(odd) {
+    background-color: #dadada;
+}
+
+.airport-box:nth-child(even) {
+    background-color: #ededed;
+}
+
+
+  .airport-name1
+  {
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .airport-name
+  {
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .airport-code
+  {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+  }
+
+  label
+  {
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .choose span{
+    font-weight: bold;
+  }
+
+  .bassem
+  {
+    float: left;
+    margin-bottom: 10px;
+    font-size: 13px;
+
+  }
+
+  .btn-ty.active
+  {
+    background-color: #3a3a3a !important;
+    color: #FFFFFF !important;
+  }
+
+  .plane-box
+  {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    cursor: pointer;
+    z-index: 1011;
+  }
+
+  .plane-box img
+  {
+    width: 100%;
+  }
+  
